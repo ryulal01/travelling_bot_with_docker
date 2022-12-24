@@ -7,7 +7,7 @@
 
 #### перейти в папку cd docker_tg_bot
 
-#### В папке изменить имя с EXAMPLE.env на .env и далее внутри файла подставить собственные значения:
+#### В файле docker-compose вставить ваши ключи:
 
 * #### токен из botfather 
 *  ####  получить токен aviasales  как описано тут: https://support.travelpayouts.com/hc/ru/articles/203956163
@@ -15,8 +15,9 @@
 #### убедиться что установлен docker compose
 #### запустить команду docker-compose up
 
+или
 
-
+####залить на yandex cloud
 
 
 
