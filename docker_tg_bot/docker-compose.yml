@@ -2,6 +2,7 @@ version: '3.3'
 
 services:
   db:
+    container_name: db
     image: postgres:12.4
     restart: always
     environment:
@@ -15,8 +16,8 @@ services:
     image: ryulal/tg_bot_travel:latest
     restart: always
     environment:
-      TOKEN_TG: Замените:НА_ВАШ
-      TOKEN_AVIASALES: Замените_НА_ВАШ
+      TOKEN_TG: Ваш-ИД:ВАШ_КОД
+      TOKEN_AVIASALES: ВАШ_КОД
       DB_NAME: postgres
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -26,5 +27,6 @@ services:
       - "8000:8000"
     depends_on:
       - db
+
 volumes:
   postgres_data:
